@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int main(void)
+void print_alphabet(void)
 {
 	char letra;
 
@@ -10,5 +10,4 @@ int main(void)
 	putchar(letra);
 	}
 	putchar('\n');
-	return (0);
 }
