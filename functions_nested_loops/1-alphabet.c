@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-void print_alphabet(void)
+
+int main(void)
 {
 	char letra;
 
-	for (letra = 'a'; letra <= 'z'; letra = letra++) 
+	for (letra = 'a'; letra <= 'z'; letra++) 
 	{
-	_putchar(letra);
+	putchar(letra);
 	}
-	_putchar('\n')
+	putchar('\n');
+	return (0);
 }
