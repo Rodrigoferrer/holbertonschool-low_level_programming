@@ -1,9 +1,9 @@
-#include "main.h" 
+#include "main.h"
 /**
 *puntero para variable 98
 */
-int main(void)
+void reset_to_98(int *n)
 {
-	int variable = 98 ;
-	int *puntero_entero = &variable ;
+	int *puntero_entero = n;
+	*puntero_entero = 98;
 }
