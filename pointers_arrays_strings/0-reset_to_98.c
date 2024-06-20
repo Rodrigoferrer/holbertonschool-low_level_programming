@@ -6,5 +6,4 @@ int main(void)
 {
 	int variable = 98 ;
 	int *puntero_entero = &variable ;
-	return (0)
 }
