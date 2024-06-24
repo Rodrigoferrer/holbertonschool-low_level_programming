@@ -1,17 +1,22 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code
+ * rev_string - revierte la cadena
  *
- * Return: Always 0.
+ * @s: cadena
  */
-int main(void)
+void rev_string(char *s)
 {
-    char s[10] = "My School";
+	int l;
+	int i;
+	char c;
 
-    printf("%s\n", s);
-    rev_string(s);
-    printf("%s\n", s);
-    return (0);
+	for (l = 0; s[l] != '\0'; l++)
+	{
+	}
+	for (i = 0; i < l / 2; i++)
+	{
+		c = s[i];
+		s[i] = s[l - i - 1];
+		s[l - i - 1] = c;
+	}
 }
