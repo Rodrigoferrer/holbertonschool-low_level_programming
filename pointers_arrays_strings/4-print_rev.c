@@ -1,17 +1,19 @@
 #include "main.h"
-#include "2-strlen.c"
 /**
- * function that prints a string backwards
- * return: always 0
+ * print_reverse
  */
 void print_rev(char *s)
 {
-	int len = _strlen(s);
+	int inicial;
 
-	while (len >= 0) 
+	int b;
+
+	for (inicial = 0; s[inicial] != '\0'; inicial++)
 	{
-		_putchar(s[len]);
-		len--;
 	}
-		_putchar('\n');
+	for (b = inicial - 1; b >= 0; b--)
+	{
+		_putchar(s[b]);
+	}
+	_putchar('\n');
 }
