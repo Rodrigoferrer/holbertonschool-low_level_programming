@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <string.h>
+#include "string.h"
 #include "main.h"
-
 /**
  * function that prints a string backwards
  * return: always 0
