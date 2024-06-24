@@ -11,7 +11,7 @@ void print_rev(char *s)
     int longitud = strlen(s);
     int i;
     for (i = longitud - 1; i >= 0; i--) {
-        putchar(s[i]);
+        _putchar(s[i]);
     }
-    putchar('\n');
+    _putchar('\n');
 }
