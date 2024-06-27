@@ -1,13 +1,16 @@
 #include "main.h"
-#include "_putchar.c"
+/**
+ * @s: string
+ * _puts_recursion: funcion que recorre un string en reversa
+ * Return : void
+ */
 void _puts_recursion(char *s)
 {
-	if (*s == '\0');
+	if (*s == '\0')
 	{
-	putchar ('\n');
+		_putchar ('\n');
 		return;
 	}
-
-		_putchar (*s);
-		_puts_recursion(s + 1);
+	_putchar (*s);
+	_puts_recursion(s + 1);
 }
