@@ -3,33 +3,27 @@
 #include "main.h"
 
 /**
- * create_array - creates an array of chars
- * @size: the size of the array to create
- * @c: the character to fill the array with
+ * simple_print_buffer - prints buffer in hexa
+ * @buffer: the address of memory to print
+ * @size: the size of the memory to print
  *
- * Return: a pointer to the created array.
+ * Return: Nothing.
  */
 
 char *create_array(unsigned int size, char c)
 {
-    char *s;
-    unsigned int i; 
+    char *array;
+    unsigned int i;
 
     if (size == 0)
-    {
         return (NULL);
-    }
-    s = malloc(size + 1);
-    if ((s = 0))
-	{
-        return (NULL);
-    }
-    for (i = 0; i < size; i++)
-    {
-        s[i] = c;
-    }
-    s[size] = '0';
-    return (s);
-    free(s);
 
+    array = malloc(size * sizeof(char));
+    if (array == NULL)
+        return (NULL);
+
+    for (i = 0; i < size; i++)
+        array[i] = c;
+
+    return (array);
 }
