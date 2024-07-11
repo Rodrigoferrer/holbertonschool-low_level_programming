@@ -3,29 +3,45 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
+ * str_concat - Concatena dos strings
+ * @s1: Primer string
+ * @s2: Segundo string
  *
- * Return: Always 0.
+ * Return: Puntero al nuevo string concatenado, o NULL si falla
  */
 
 char *str_concat(char *s1, char *s2)
-	{
-	int len_s1;
-	int len_s2;
-	char *s3;
-	if (s1==NULL)
-	{
-		return ("");
-	}
-	if (s2==NULL)
-	{
-		return ("");
-	}
-	for (len_s1 = 0; s1[len_s1] != '\0'; len_s1 ++)
-	{
-	}		
-	for (len_s2 = 0; s1[len_s2] != '\0'; len_s2 ++)
-	{
-	}
-	s3 = malloc((len_s1 + len_s2 + 1) * sizeof(char));
-	}
+{
+    char *nueva_str;
+    unsigned int len1 = 0, len2 = 0, i, j;
+
+    /* Tratar NULL como string vacío */
+    if (s1 == NULL)
+        s1 = "";
+    if (s2 == NULL)
+        s2 = "";
+
+    /* Calcular longitudes */
+    while (s1[len1])
+        len1++;
+    while (s2[len2])
+        len2++;
+
+    /* Asignar memoria para la nueva string */
+    nueva_str = malloc(sizeof(char) * (len1 + len2 + 1));
+    if (nueva_str == NULL)
+        return (NULL);
+
+    /* Copiar s1 */
+    for (i = 0; i < len1; i++)
+        nueva_str[i] = s1[i];
+
+    /* Copiar s2 */
+    for (j = 0; j < len2; j++, i++)
+        nueva_str[i] = s2[j];
+
+    /* Añadir el carácter nulo al final */
+    nueva_str[i] = '\0';
+
+    return (nueva_str);
+}
