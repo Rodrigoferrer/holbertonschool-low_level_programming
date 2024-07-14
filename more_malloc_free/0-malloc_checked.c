@@ -29,7 +29,7 @@ void *malloc_checked(unsigned int b) {
         /* Print an error message to stderr using putchar */
         char *err_msg = "Error: unable to allocate memory\n";
         for (; *err_msg; err_msg++) {
-           _putchar(*err_msg);
+            putchar(*err_msg);
         }
         /* Exit with status 98 if malloc fails */
         exit(98);
