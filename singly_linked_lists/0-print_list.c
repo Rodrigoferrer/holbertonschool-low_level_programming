@@ -4,22 +4,35 @@
 #include "lists.h"
 
 /**
+ * Funcion que imprime los elementos de lista guardada en el puntero h
  *
- * Imprimir todos los elementos de la lista
- * Si str = NULL , Print [0] (Nil)
- * @h: Head of linked list
- * Return: Number of nodes
+ * Devuelve la cantidad de nodos
+ */
+/**
+ * Imprime todos los elementos de una lista.
+ *
+ * Descripción de la función.
+ *
+ * @param h Cabeza de la lista enlazada.
+ * @return Número de nodos en la lista.
  */
 
 size_t print_list(const list_t *h)
 {
-    size_t contador = 0;
+	size_t contador = 0;
 
-    while (h != NULL)
-    {
-        printf("[%lu] %s\n", contador, h->str);
-        contador++;
-        h = h->next;
-    }
-    return (contador);
+	while (h != NULL)
+	{
+	if (h->str == NULL)
+	{
+	printf("[%lu] (nil)\n", contador);
+	}
+	else
+	{
+	printf("[%lu] %s\n", contador, h->str);
+	}
+	contador++;
+	h = h->next;
+	}
+	return (contador);
 }
