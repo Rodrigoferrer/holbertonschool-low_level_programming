@@ -17,22 +17,20 @@
  * @return Número de nodos en la lista.
  */
 
+
 size_t print_list(const list_t *h)
 {
 	size_t contador = 0;
 
 	while (h != NULL)
 	{
-	if (h->str == NULL)
-	{
-	printf("[%lu] (nil)\n", contador);
-	}
+		if (h->str == NULL)
+		printf("[0] (nil)\n");
 	else
-	{
-	printf("[%lu] %s\n", contador, h->str);
-	}
+		printf("[%u] %s\n", h->len, h->str);
 	contador++;
 	h = h->next;
 	}
-	return (contador);
+
+return (contador);
 }
