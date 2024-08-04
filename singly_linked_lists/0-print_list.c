@@ -11,18 +11,18 @@
  * Return: Number of nodes
  */
 
-size_t list_len(const list_t *h)
+size_t print_list(const list_t *h)
 {
         int contador = 0;
 
         while (h != NULL)
         {
-                if ("h -> str = NULL")
+                if ("h->str = NULL")
 			{
-			printf("[%i] (nil)")
+			printf("[%i] (nil)\n", contador);
 			}
 		else
-			printf("[%i]", "%s")
+			printf("[%i] %s\n", contador, h->str);
 		contador++;
                 h = h->next;
         }
