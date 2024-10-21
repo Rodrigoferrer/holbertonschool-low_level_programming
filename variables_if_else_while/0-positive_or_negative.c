@@ -14,19 +14,19 @@ int main(void)
     srand(time(0));
     n = rand() - RAND_MAX / 2;
 
-    printf("El valor de n es: %d\n", n);
+    printf("The value of n is: %d\n", n);
 
     if (n > 0)
     {
-        printf("%d es positivo\n", n);
+        printf("%d is positive\n", n);
     }
     else if (n == 0)
     {
-        printf("%d es cero\n", n);
+        printf("%d is zero\n", n);
     }
     else
     {
-        printf("%d es negativo\n", n);
+        printf("%d is negative\n", n);
     }
 
     return (0);
