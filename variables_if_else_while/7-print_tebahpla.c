@@ -5,11 +5,11 @@
  * Return: 0 if succesfull
  */
 
-int main (void)
+int main(void)
 {
 	char alph;
 
-	for (alph = 'a'; alph <= 'z'; alph--)
+	for (alph = 'z'; alph <= 'a'; alph--)
 	{
 		putchar(alph);
 	}
