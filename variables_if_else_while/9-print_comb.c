@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Program that prints the alphabet in reverse
+ * main - Program that prints number 0 to 9 with a coma and a space
  * Return: 0 if succesfull
  */
 
@@ -12,12 +12,13 @@ int main(void)
 	while (num <= 9)
 	{
 		putchar(num + '0');
-		if(num == 9)
+		if(num != 9)
 		{
-			putchar('\n');
+			putchar(' ');
+			putchar(',');
 		}
-		putchar(',');
 		num++;
 	}	
+	putchar ('\n');
 	return (0);
 }
