@@ -2,9 +2,7 @@
 #include <stdio.h>
 /**
  * times_table - Function that prints table from 0 to 9
- * @i:
- * @j:
- * @product:
+ * @i, @j, @product
  * Return: void
  */
 
@@ -24,7 +22,7 @@ void times_table(void)
 		}
 		if (product < 10)
 		{
-			_putchar(' '); 
+			_putchar(' ');
 		}
 		if (product >= 10)
 		{
