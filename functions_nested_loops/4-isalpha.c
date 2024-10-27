@@ -5,6 +5,7 @@
 /**
  *_isalpha - Function that checks if a character is uppercase
  *@c: character to be checked
+ *Return: 1 if uppercase 0 if not
  */
 
 int _isalpha(int c)
