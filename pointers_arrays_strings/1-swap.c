@@ -3,14 +3,15 @@
 
 /**
  * swap_int - Function that swaps the values of two integers
- * @a, @b: Parameters to be swapped
+ * @a: First parameter to make the swap
+ * @b: Second parameter to make the swap
  * Return: Void
  */
 
 void swap_int(int *a, int *b)
 {
 	int temp;
-	
+
 	temp = *a;
 	*a = *b;
 	*b = temp;
