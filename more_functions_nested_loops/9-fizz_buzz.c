@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry of the program
- * Return: Always 0
+ * fizz_buzz - Functon that prints number from 0 to 100
+ * @n: Numbers to be checked
+ * Return: Void
  */
 
 void fizz_buzz(int n)
@@ -12,16 +13,24 @@ void fizz_buzz(int n)
 
 	for (i = n; i <= 100; i++)
 	{
-		if (n % 3 == 0)
-		printf("Fizz");
-		if (n % 5 == 0)
-		printf("Buzz");
-		if (n % 3 == 0 && i % 5 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		printf("FizzBuzz");
-		if (n < 100)
+		else if (i % 3 == 0)
+		printf("Fizz");
+		else if (i % 5 == 0)
+		printf("Buzz");
+		else
+		printf("%d", i);
+		if (i < 100)
 		printf(" ");
 	}
+	printf("\n");
 }
+
+/**
+ * main - Entry point of the program
+ * Return: Void
+ */
 
 int main(void)
 {
