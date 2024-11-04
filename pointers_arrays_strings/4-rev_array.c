@@ -20,4 +20,3 @@ void reverse_array(int *a, int n)
 		a[n - 1 - i] = temp;
 	}
 }
-}
