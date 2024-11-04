@@ -24,5 +24,6 @@ int _atoi(char *s);
 char *_memset(char *s, char b, unsigned int n);
 void *memcpy(void *dest, const void *src, size_t n);
 char *_strchr(char *s, char c);
+unsigned int _strspn(char *s, char *accept);
 
 #endif
