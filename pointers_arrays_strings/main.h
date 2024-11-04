@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stddef.h>
 
 int _putchar(char c);
 void reset_to_98(int *n);
@@ -21,5 +22,6 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *str);
 int _atoi(char *s);
 char *_memset(char *s, char b, unsigned int n);
+void *memcpy(void *dest, const void *src, size_t n);
 
 #endif
