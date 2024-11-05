@@ -8,8 +8,8 @@
  * Return: Number of bytes
  */
 
-unsigned int _strspn(char *s, char *accept)
-{
+unsigned int _strspn(char *s, char *accep)
+
 	unsigned int count = 0;
 	char *ptr;
 
