@@ -3,10 +3,11 @@
 #include <stddef.h>
 
 /**
- * _strstr - Function finds the first occurrence of the substring needle in the string haystack
+ * _strstr - Function finds the first occurrence
+ * of the substring needle in the string haystack
  * @haystack: String 1
  * @needle: String 2
- * Return: a pointer to the beginning of the located substring 
+ * Return: a pointer to the beginning of the located substring
  * or NULL if the substring is not found.
  */
 
@@ -19,11 +20,16 @@ char *_strstr(char *haystack, char *needle)
 		ptr = needle;
 		while (*ptr)
 		{
-			if (*ptr == *haystack)
-				return (needle);
-			if (*ptr == '\0' && *haystack == '\0')
+			if (*haystack == *ptr)
+			{
+				return (ptr);
+			}
+			ptr++;
+			if (*haystack == '\0' && *ptr == '\0')
 				break;
 		}
+		haystack++;
+
 	}
 	return (0);
 }
