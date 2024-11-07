@@ -10,8 +10,8 @@
 
 void _argc_argv(int argc, char **argv)
 {
-	printf("The name of the program is: %s\n", argv[0]);
-	printf("The number of the arguments is: %d\n", argc);
+	printf("%s\n", argv[0]);
+	printf("%d\n", argc);
 }
 
 /**
