@@ -8,9 +8,10 @@
  * Return: Void
  */
 
-void print_argc(int argc, char **argv __attribute__((unused)))
+void print_argc(int argc, char **argv)
 {
-	printf("%d\n", argc);
+	(void)argv;
+	printf("%d\n", argc - 1);
 }
 
 /**
