@@ -9,29 +9,32 @@
  * Return: 0
  */
 
+#include <stdio.h>
+#include <stdlib.h>
+
 int main(int argc, char *argv[])
 {
-	int num1;
-	int num2;
-	int result;
+	int i;
+	int num;
+	int result = 0;
 
-	if (argc < 3)
+	if (argc < 2)
 	{
 		printf("0\n");
 		return (0);
 	}
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-
-	if (num1 < 0 || num2 < 0 || num1 > 9 || num2 > 9)
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		return (1);
+		num = atoi(argv[i]);
+		if (num < 0)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		result += num;
 	}
 
-	result = num1 + num2;
 	printf("%d\n", result);
-
 	return (0);
 }
