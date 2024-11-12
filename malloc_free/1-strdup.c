@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _strdup - Function that duplicates a string using malloc
@@ -17,7 +18,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	strcopy = (char *)malloc(sizeof(char));
+	strcopy = malloc((strlen(str) + 1) * sizeof(char));
 	while (str[i] != '\0')
 	{
 		strcopy[i] = str[i];
