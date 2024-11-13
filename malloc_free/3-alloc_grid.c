@@ -29,11 +29,6 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 		}
-		if (grid[j] == NULL)
-		{
-				free(grid[i]);
-				return (NULL);
-		}
 	}
 	return (grid);
 }
