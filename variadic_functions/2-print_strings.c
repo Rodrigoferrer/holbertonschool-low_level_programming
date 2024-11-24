@@ -27,11 +27,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (i < n)
 	{
 		current = va_arg(args, char *);
-		printf("%s", current);
 		if (current == NULL)
 		{
 			printf("nil");
 		}
+		printf("%s", current);
 		if (i < n - 1 && separator != NULL)
 		{
 			printf("%s", separator);
