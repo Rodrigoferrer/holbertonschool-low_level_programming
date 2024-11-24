@@ -19,11 +19,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(args, n);
 	i = 0;
 
-	if (separator == NULL && n == 0)
-	{
-		va_end(args);
-		return;
-	}
 	while (i < n)
 	{
 		current = va_arg(args, char *);
@@ -31,7 +26,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			printf("nil");
 		}
+		else
+		{
 		printf("%s", current);
+		}
 		if (i < n - 1 && separator != NULL)
 		{
 			printf("%s", separator);
