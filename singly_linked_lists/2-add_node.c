@@ -5,7 +5,7 @@
 /**
  * add_node -  function that adds a new node at the beginning of a list_t list
  * @head: header node
- * @str: string
+ * @str: string 01
  * Return: The adress of the new element, or NULL if failed
  */
 
